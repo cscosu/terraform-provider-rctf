@@ -37,6 +37,10 @@ func resourceChallenge() *schema.Resource {
 				Type:     schema.TypeString,
 				Required: true,
 			},
+			"difficulty": {
+				Type:     schema.TypeString,
+				Required: true,
+			},
 			"author": {
 				Type:     schema.TypeString,
 				Required: true,
@@ -91,6 +95,7 @@ func resourceChallengePut(ctx context.Context, d *schema.ResourceData, m interfa
 		Name:        d.Get("name").(string),
 		Description: d.Get("description").(string),
 		Category:    d.Get("category").(string),
+		Difficulty:  d.Get("difficulty").(string),
 		Author:      d.Get("author").(string),
 		Files:       []rctf.ChallengeFile{},
 		Points: rctf.ChallengePoints{
@@ -136,6 +141,7 @@ func resourceChallengeRead(ctx context.Context, d *schema.ResourceData, m interf
 	d.Set("name", c.Name)
 	d.Set("description", c.Description)
 	d.Set("category", c.Category)
+	d.Set("difficulty", c.Difficulty)
 	d.Set("author", c.Author)
 	var f []map[string]interface{}
 	for _, file := range c.Files {

@@ -20,6 +20,7 @@ type Challenge struct {
 	Name             string          `json:"name"`
 	Description      string          `json:"description"`
 	Category         string          `json:"category"`
+	Difficulty       string          `json:"difficulty"`
 	Author           string          `json:"author"`
 	Files            []ChallengeFile `json:"files"`
 	Points           ChallengePoints `json:"points"`

@@ -19,6 +19,7 @@ description: |-
 
 - **author** (String)
 - **category** (String)
+- **difficulty** (String)
 - **description** (String)
 - **flag** (String)
 - **max_points** (Number)
