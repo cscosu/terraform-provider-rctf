@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/redpwn/terraform-provider-rctf/internal/rctf"
+	"github.com/cscosu/terraform-provider-rctf/internal/rctf"
 )
 
 func resourceChallenge() *schema.Resource {

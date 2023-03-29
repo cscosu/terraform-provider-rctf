@@ -1,4 +1,4 @@
-module github.com/redpwn/terraform-provider-rctf
+module github.com/cscosu/terraform-provider-rctf
 
 go 1.17
 

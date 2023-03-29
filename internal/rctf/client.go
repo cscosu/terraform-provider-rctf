@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/redpwn/terraform-provider-rctf/internal/version"
+	"github.com/cscosu/terraform-provider-rctf/internal/version"
 )
 
 type Client struct {

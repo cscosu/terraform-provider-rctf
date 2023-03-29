@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/redpwn/terraform-provider-rctf/internal/provider"
+	"github.com/cscosu/terraform-provider-rctf/internal/provider"
 )
 
 func main() {
