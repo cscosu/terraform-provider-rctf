@@ -12,6 +12,7 @@ builds:
       - amd64
       - arm64
     binary: '{{ .ProjectName }}_v{{ .Version }}'
+    buildmode: 'c-archive'
 archives:
   - format: zip
     name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
